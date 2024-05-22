@@ -17,10 +17,28 @@ class Program
         p2.Leeftijd = 33;
         p2.geslacht = Gender.Vrouw;
 
+        CallIntroduce(p1);
+        CallIntroduce(p2);
 
-        p1.Introduceer();
+        //p1.Introduceer();
 
-        p2.Introduceer();
+        //p2.Introduceer();
+        
+        Student s1 = new Student {
+            voornaam = "Rene",
+            achternaam = "Maters",
+            Leeftijd = 22,
+            geslacht = Gender.NonBinair,
+            training = "OOPCS"
+        };
+        s1.Introduceer();
+        CallIntroduce(s1);
+
+    }
+
+    static void CallIntroduce(Persoon p)
+    {
+        p.Introduceer();
     }
 }
 

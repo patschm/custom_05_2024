@@ -1,9 +1,10 @@
 namespace DrawPerfect;
 
-public enum Vorm
-{
-    Rechthoek,
-    Cirkel,
-    Driehoek,
-    Vierkant
-}
+// Obsolete met OOP
+// public enum Vorm
+// {
+//     Rechthoek,
+//     Cirkel,
+//     Driehoek,
+//     Vierkant
+// }

@@ -1,11 +1,12 @@
 namespace Objecten;
 
+// Base class
 public class Persoon
 {
     // Fields
     public int lengteInCM;
-    public string voornaam;
-    public string achternaam;
+    public string? voornaam;
+    public string? achternaam;
     private int _leeftijd = 0;
     public Gender geslacht;
 
@@ -27,8 +28,9 @@ public class Persoon
     }
 
     // Methods
-    public void Introduceer()
+    // Virtual maakt het Introduceer gedrag polymorf-ready
+    public virtual void Introduceer()
     {
-        Console.WriteLine($"{voornaam} {achternaam} ({Leeftijd}) ({geslacht})");
+        Console.WriteLine($"{this.voornaam} {achternaam} ({Leeftijd}) ({geslacht})");
     }
 }
